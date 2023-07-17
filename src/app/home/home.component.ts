@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+    
+}
+interface Course{
+  name:string;
+  grade: number;
+}
 
+const courses: Course[] = []; 
+
+function addcourse()
+{
+  const courseNameInput = document.getElementById('courseName') as HTMLInputElement;
+  const courseGradeInput = document.getElementById('Grade') as HTMLInputElement;
+
+  const courseName = courseNameInput.value;
+  const courseGrade = parseInt(courseGradeInput.value);
 }
